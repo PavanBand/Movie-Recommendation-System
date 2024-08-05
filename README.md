@@ -71,10 +71,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-- **Manjundhar Adagiri** - *Initial work* - [Manjundhar](https://github.com/Manju025)
-- **LinkedIn Account** - [Adagiri-Manjundhar](https://www.linkedin.com/in/manjundhar-adagiri)
+- **Pavan Bandi** - *Initial work* - [Pavan](https://github.com/PavanBand)
+- **LinkedIn Account** - [Pavan-Bandi](https://www.linkedin.com/in/pavan-bandi-b4388726b/)
 ## Acknowledgments
 
 - Inspiration from various movie recommendation systems.
 - Thanks to the Flask community for their extensive documentation and support.
-
