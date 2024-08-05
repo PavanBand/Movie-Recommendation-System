@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Manjundhar Adagiri</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        h1, h2, h3 {
+            color: #0073e6;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% else %}
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        <h1>About Me</h1>
+        <p>Welcome to my website! I'm Manjundhar Adagiri, an aspiring AI-focused Computer Science student with a passion for innovation and technology. Here's a bit more about my journey and what drives me.</p>
+
+        <h2>Who I Am</h2>
+        <p>I am currently pursuing a Bachelor of Computer Science with a specialization in Artificial Intelligence from Parul University, Vadodara, Gujarat. My journey in the tech world started with a diploma in Computer Science from Jyothishmathi Institute of Technology and Science, Karimnagar, Telangana.</p>
+
+        <h2>My Mission</h2>
+        <p>My mission is to harness the power of technology to create innovative solutions that make a difference. Whether it's developing interactive games, dynamic websites, or intuitive applications, I strive to blend technical skills with creativity to solve real-world problems.</p>
+
+        <h2>My Expertise</h2>
+        <p><strong>Technical Skills:</strong> With proficiency in Python, Java, SQL, HTML, CSS, and Linux, I bring a diverse set of skills to the table. My projects, ranging from a Tic-Tac-Toe game to a dynamic Food Recipe website and an Age Calculator using GUI, showcase my ability to tackle various challenges and deliver effective solutions.</p>
+        <p><strong>Certifications:</strong> My expertise is validated by certifications from renowned platforms like Coding Ninjas, CodeChef, Hackerrank, and Programming Hub. These certifications reflect my dedication to learning and staying updated with the latest industry trends.</p>
+        <p><strong>Industrial Training:</strong> My practical experience is enriched by industrial training at Greptor Solutions, where I honed my software development, personal development, and problem-solving skills.</p>
+
+        <h2>My Values</h2>
+        <p><strong>Innovation:</strong> I believe in constantly exploring new ideas and technologies to stay ahead in the fast-paced tech world.</p>
+        <p><strong>Excellence:</strong> I am committed to delivering high-quality solutions that exceed expectations.</p>
+        <p><strong>Collaboration:</strong> I value teamwork and believe that great things are achieved when we work together.</p>
+
+        <h2>Extra-Curricular Activities</h2>
+        <p>Beyond my technical pursuits, I have a rich background in extracurricular activities. From representing school in boxing competitions to dance routines, these experiences have taught me valuable lessons in teamwork, and discipline.</p>
+
+        <h2>Achievements</h2>
+        <p>Certified by <strong>Coding Ninjas</strong>, CodeChef, Hackerrank, and Programming Hub in Python. Active profiles on Leetcode, Hackerrank, and GitHub, showcasing my continuous engagement with the tech community.</p>
+
+        <h2>Get in Touch</h2>
+        <p>I am always excited to connect with like-minded individuals and organizations. Whether you have a project in mind, need technical expertise, or simply want to collaborate, feel free to reach out to me.</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:manjundhar1701@gmail.com">manjundhar1701@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/manjundhar-adagiri" target="_blank">linkedin.com/in/manjundhar-adagiri</a></p>
+        </div>
+    </div>
+</body>
+</html>
